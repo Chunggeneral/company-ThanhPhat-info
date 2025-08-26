@@ -4,20 +4,24 @@
   <meta charset="UTF-8">
   <title>Thông tin công ty</title>
 </head>
-<body style="font-family: Arial, sans-serif; padding: 20px;">
+<body style="font-family: Arial, sans-serif; padding: 20px; line-height: 1.6;">
   <h2>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ SẢN XUẤT THỰC PHẨM THÀNH PHÁT</h2>
   <p><b>MST:</b> 0319082688</p>
   <p><b>Email:</b> nguyenthithuan5286@gmail.com</p>
-  <button onclick="copyText()">📋 Copy toàn bộ</button>
+  <p><b>Địa chỉ:</b> 433A Nơ Trang Long, Phường Bình Lợi Trung, Thành phố Hồ Chí Minh, Việt Nam</p>
+
+  <button onclick="copyText()" style="padding: 10px 15px; font-size: 14px; cursor: pointer;">
+    📋 Copy toàn bộ thông tin
+  </button>
 
   <script>
     function copyText() {
       const text = `CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ SẢN XUẤT THỰC PHẨM THÀNH PHÁT
-     433A Nơ Trang Long, Phường Bình Lợi Trung, Thành phố Hồ Chí Minh, Việt Nam
 MST: 0319082688
-nguyenthithuan5286@gmail.com`;
+Email: nguyenthithuan5286@gmail.com
+Địa chỉ: 433A Nơ Trang Long, Phường Bình Lợi Trung, Thành phố Hồ Chí Minh, Việt Nam`;
       navigator.clipboard.writeText(text).then(() => {
-        alert("Đã copy thông tin!");
+        alert("✅ Thông tin đã được copy!");
       });
     }
   </script>
