@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thông tin công ty</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px;">
+  <h2>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ SẢN XUẤT THỰC PHẨM THÀNH PHÁT</h2>
+  <p><b>MST:</b> 0319082688</p>
+  <p><b>Email:</b> nguyenthithuan5286@gmail.com</p>
+  <button onclick="copyText()">📋 Copy toàn bộ</button>
+
+  <script>
+    function copyText() {
+      const text = `CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ SẢN XUẤT THỰC PHẨM THÀNH PHÁT
+MST: 0319082688
+nguyenthithuan5286@gmail.com`;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Đã copy thông tin!");
+      });
+    }
+  </script>
+</body>
+</html>
