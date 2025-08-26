@@ -3,16 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <title>Thông tin công ty</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+      background: #f9f9f9;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #333;
+      margin-top: 0;
+    }
+    button, a.download-btn {
+      padding: 10px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    button {
+      background: #1976d2;
+      color: white;
+    }
+    a.download-btn {
+      display: inline-block;
+      background: #4CAF50;
+      color: white;
+      text-decoration: none;
+    }
+    .pdf-container {
+      margin-top: 20px;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; padding: 20px; line-height: 1.6;">
-  <h2>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ SẢN XUẤT THỰC PHẨM THÀNH PHÁT</h2>
-  <p><b>MST:</b> 0319082688</p>
-  <p><b>Email:</b> nguyenthithuan5286@gmail.com</p>
-  <p><b>Địa chỉ:</b> 433A Nơ Trang Long, Phường Bình Lợi Trung, Thành phố Hồ Chí Minh, Việt Nam</p>
+<body>
+  <div class="card">
+    <h2>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ SẢN XUẤT THỰC PHẨM THÀNH PHÁT</h2>
+    <p><b>MST:</b> 0319082688</p>
+    <p><b>Email:</b> nguyenthithuan5286@gmail.com</p>
+    <p><b>Địa chỉ:</b> 433A Nơ Trang Long, Phường Bình Lợi Trung, Thành phố Hồ Chí Minh, Việt Nam</p>
 
-  <button onclick="copyText()" style="padding: 10px 15px; font-size: 14px; cursor: pointer;">
-    📋 Copy toàn bộ thông tin
-  </button>
+    <button onclick="copyText()">📋 Copy toàn bộ thông tin</button>
+
+    <h3>📄 Giấy chứng nhận</h3>
+    <div class="pdf-container">
+      <iframe src="certificate.pdf"></iframe>
+    </div>
+
+    <a href="certificate.pdf" download class="download-btn">⬇️ Tải về PDF</a>
+  </div>
 
   <script>
     function copyText() {
